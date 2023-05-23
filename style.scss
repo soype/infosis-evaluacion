@@ -305,9 +305,14 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   margin-top: 2rem;
   color: $color-titulo;
+}
+
+.form-subtitle{
+  font-size: 12px;
+  font-weight: 500;
 }
 
 p {
@@ -351,8 +356,8 @@ p {
         }
       }
       input {
-        height: 40px;
-        border-radius: 10px;
+        height: 50px;
+        border-radius: 16px;
         padding: 0 10px 0;
         font-family: "Poppins";
       }
@@ -366,12 +371,18 @@ p {
   }
 }
 
+.alianzas{
+  font-size: 12px;
+  font-weight: 500;
+}
+
 $animationSpeed: 8s;
 
 .slider{
     display: flex;
     flex-direction: row;
     position: relative;
+    margin-bottom: 1rem;
 }
 
 .logos-primary {
@@ -409,8 +420,8 @@ $animationSpeed: 8s;
 }
 
 .logo {
-  height: 50px;
-  width: 150px;
+  height: 40px;
+  width: 120px;
   padding: 2px;
   background-color: #ff0090;
   border-radius: 40px;
@@ -418,6 +429,9 @@ $animationSpeed: 8s;
   display: flex;
   justify-content: center;
   align-items: center;
+  svg{
+    width: 60px;
+  }
 }
 
 .submit-container {
@@ -433,7 +447,7 @@ $animationSpeed: 8s;
       font-weight: 500;
       font-family: "Poppins";
       height: 40px;
-      width: 100px;
+      width: 120px;
       border: none;
       border-radius: 2rem;
       cursor: pointer;
@@ -442,9 +456,10 @@ $animationSpeed: 8s;
       &:hover {
         box-shadow: 0px 5px 10px 0px rgba(102, 102, 102, 0.75);
       }
+      margin: 1rem;
     }
     .wpcf7-spinner {
-      margin: 1rem;
+      display: none;
     }
   }
 }
@@ -494,7 +509,7 @@ $animationSpeed: 8s;
   margin: 10px;
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 500px){
     .field-container{
         width: 300px;
     }
