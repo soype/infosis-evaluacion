@@ -1,4 +1,84 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -29,15 +109,20 @@ button {
   outline: 0;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -57,7 +142,13 @@ q:after {
   font-style: normal;
 }
 
-textarea, input[type=text], input[type=button], input[type=submit], input[type=reset], input[type=search], input[type=password] {
+textarea,
+input[type=text],
+input[type=button],
+input[type=submit],
+input[type=reset],
+input[type=search],
+input[type=password] {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
@@ -73,7 +164,8 @@ table {
   border-spacing: 0;
 }
 
-th, td {
+th,
+td {
   padding: 2px;
 }
 
@@ -81,7 +173,9 @@ big {
   font-size: 120%;
 }
 
-small, sup, sub {
+small,
+sup,
+sub {
   font-size: 80%;
 }
 
@@ -97,7 +191,8 @@ dd {
   margin-left: 20px;
 }
 
-kbd, tt {
+kbd,
+tt {
   font-family: courier;
   font-size: 12px;
 }
@@ -106,7 +201,9 @@ ins {
   text-decoration: underline;
 }
 
-del, strike, s {
+del,
+strike,
+s {
   text-decoration: line-through;
 }
 
@@ -114,11 +211,23 @@ dt {
   font-weight: bold;
 }
 
-address, cite, var {
+address,
+cite,
+var {
   font-style: italic;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -184,7 +293,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   right: auto;
 }
 
-.visually-hidden:not(:focus):not(:active), .form-allowed-tags:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+.form-allowed-tags:not(:focus):not(:active) {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -208,8 +318,8 @@ body {
 h1 {
   font-weight: 700;
   font-size: 36px;
-  margin-top: 1rem;
-  color: #181E4B;
+  margin-top: 2rem;
+  color: #181e4b;
 }
 
 p {
@@ -226,6 +336,7 @@ p {
   border-radius: 20px;
   margin: 1rem;
   background-color: white;
+  overflow: hidden;
 }
 
 .wpcf7-form {
@@ -239,14 +350,16 @@ p {
   width: 400px;
   text-align: center;
 }
-.field-container p .wpcf7-form-control-wrap input, .field-container p .wpcf7-form-control-wrap textarea {
+.field-container p .wpcf7-form-control-wrap input,
+.field-container p .wpcf7-form-control-wrap textarea {
   width: 100%;
   border: 1px rgba(113, 128, 150, 0.2352941176) solid;
   box-shadow: 0px 5px 5px 0px rgba(102, 102, 102, 0.75);
   outline: none;
   transition: all 0.4s;
 }
-.field-container p .wpcf7-form-control-wrap input:hover, .field-container p .wpcf7-form-control-wrap textarea:hover {
+.field-container p .wpcf7-form-control-wrap input:hover,
+.field-container p .wpcf7-form-control-wrap textarea:hover {
   box-shadow: 0px 5px 10px 0px rgba(102, 102, 102, 0.75);
 }
 .field-container p .wpcf7-form-control-wrap input {
@@ -262,17 +375,47 @@ p {
   padding: 10px;
 }
 
-.logos {
+.slider {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.logos-primary {
   display: flex;
   flex-direction: row;
   margin: 1rem 0 1rem;
+  animation: scrollPrimary 8s linear infinite;
 }
 
+.logos-secondary {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0 1rem;
+  animation: scrollSecondary 8s linear infinite;
+}
+
+@keyframes scrollPrimary {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes scrollSecondary {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .logo {
   height: 50px;
   width: 150px;
   padding: 2px;
-  background-color: #FF0090;
+  background-color: #ff0090;
   border-radius: 40px;
   margin: 0 8px 0;
   display: flex;
@@ -285,10 +428,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 .submit-container p input {
-  background-color: #181E4B;
+  background-color: #181e4b;
   color: white;
   font-weight: 500;
   font-family: "Poppins";
@@ -316,7 +458,11 @@ p {
 }
 
 .wpcf7 form.sent .wpcf7-response-output {
-  background-color: #46b450;
+  background-color: #ff0090;
+  border-color: #ff0090;
+  color: white;
+  padding: 10px;
+  width: 40%;
 }
 
 .wpcf7-not-valid-tip {
@@ -345,4 +491,13 @@ p {
   width: 50%;
   text-align: center;
   margin: 10px;
+}
+
+@media all and (max-width: 800px) {
+  .field-container {
+    width: 300px;
+  }
+  .wpcf7 form.sent .wpcf7-response-output {
+    width: 60%;
+  }
 }/*# sourceMappingURL=style.css.map */
