@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
-<h1>hola</h1>
+<div class="contact-container">
+    <?php the_content() ?>
+</div>
 
 <?php get_footer(); ?>
