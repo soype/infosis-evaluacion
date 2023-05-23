@@ -311,8 +311,9 @@ h1 {
 }
 
 .form-subtitle{
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
+  margin: 1rem;
 }
 
 p {
@@ -348,11 +349,11 @@ p {
       textarea {
         width: 100%;
         border: 1px #7180963c solid;
-        box-shadow: 0px 5px 5px 0px rgba(102, 102, 102, 0.75);
+        box-shadow: 0px 9px 10px 0px rgba(143, 143, 143, 0.75);
         outline: none;
         transition: all 0.4s;
         &:hover {
-          box-shadow: 0px 5px 10px 0px rgba(102, 102, 102, 0.75);
+          box-shadow: 0px 9px 20px 0px rgba(143, 143, 143, 0.75);
         }
       }
       input {
@@ -372,7 +373,7 @@ p {
 }
 
 .alianzas{
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 

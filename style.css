@@ -323,8 +323,9 @@ h1 {
 }
 
 .form-subtitle {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
+  margin: 1rem;
 }
 
 p {
@@ -359,13 +360,13 @@ p {
 .field-container p .wpcf7-form-control-wrap textarea {
   width: 100%;
   border: 1px rgba(113, 128, 150, 0.2352941176) solid;
-  box-shadow: 0px 5px 5px 0px rgba(102, 102, 102, 0.75);
+  box-shadow: 0px 9px 10px 0px rgba(143, 143, 143, 0.75);
   outline: none;
   transition: all 0.4s;
 }
 .field-container p .wpcf7-form-control-wrap input:hover,
 .field-container p .wpcf7-form-control-wrap textarea:hover {
-  box-shadow: 0px 5px 10px 0px rgba(102, 102, 102, 0.75);
+  box-shadow: 0px 9px 20px 0px rgba(143, 143, 143, 0.75);
 }
 .field-container p .wpcf7-form-control-wrap input {
   height: 50px;
@@ -381,7 +382,7 @@ p {
 }
 
 .alianzas {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 
